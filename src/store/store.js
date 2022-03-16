@@ -1,9 +1,13 @@
 // IMPORTAMOS LOS HOOKS PARA CREAR EL STORE
 import { createStore, combineReducers } from "redux";
 
+// IMPORTAMOS EL REDUCER ASIGNANDO EL NOMBRE DEL DIRECTORIO + Reducer
+import amountReducer from "./amount/reducer"
+
 // Utilizamos El Hook Para Combinar TODOS LOS REDUCER DE LA APP!
 const reducers = combineReducers({
   //AQUI VAN LOS REDUCER
+  amountReducer,
 });
 
 // Creamos la Store
