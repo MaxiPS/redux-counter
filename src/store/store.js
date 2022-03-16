@@ -6,14 +6,14 @@ import amountReducer from "./amount/reducer"
 
 // Utilizamos El Hook Para Combinar TODOS LOS REDUCER DE LA APP!
 const reducers = combineReducers({
-  //AQUI VAN LOS REDUCER
+  //AQUÍ VAN LOS REDUCER
   amountReducer,
 });
 
 // Creamos la Store
 const store = createStore(
   reducers,
-  // ESTO ES PARA QUE FUNCIONEN LAS DEVTOOLS DEL NAVEGADOR (HAY QUE INSTALAR LA EXTENSION)
+  // ESTO ES PARA QUE FUNCIONEN LAS DEVTOOLS DEL NAVEGADOR (HAY QUE INSTALAR LA EXTENSIÓN: Redux DevTools )
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 

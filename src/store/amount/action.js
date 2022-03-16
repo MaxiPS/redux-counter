@@ -1,11 +1,11 @@
-// DEFINO UNA CONSTANTE PARA ESTABLECER EL TYPE DEL ACTION Y EVITAR ERRORES EN EL STRING, O SI EN ALGUN MOMENTO QUIERO CAMBIARLO
+// DEFINO UNA CONSTANTE PARA ESTABLECER EL TYPE DEL ACTION Y EVITAR ERRORES EN EL STRING, O SI EN ALGÚN MOMENTO QUIERO CAMBIARLO
 export const DEPOSITAR_DINERO = "@DEPOSITAR_DINERO";
 export const RETIRAR_DINERO = "@RETIRAR_DINERO";
 
-// DEFINO ACCION DEPOSITAR_DINERO
+// DEFINO ACCIÓN DEPOSITAR_DINERO
 
 /* Las acciones en redux sirven para informar a nuestro reducer los cambios que se van a efectuar en la APP,
-   Por Ejemplo en la accion que se muestra a continuacion, vamos a decirle que es de tipo DEPOSITAR y
+   Por Ejemplo en la acción que se muestra a continuación, vamos a decirle que es de tipo DEPOSITAR y
    El "Payload" o la "Carga de datos" en este caso es un entero y es 10.
 */
 

@@ -5,8 +5,8 @@
    Al tener nuestra app centralizada en un único store, podemos "atacar" los reducers,
    para obtener el estado deseado, esto se hace mediamente funciones.
 
-   EN ESTE CASO , para evitar confusiones separé las funciones selectoras del reducer en este archivo.
-   Generalmente se suelen encontrar en el mismo reducer.js
+   EN ESTE CASO, para evitar confusiones, separé las funciones selectoras del reducer en este archivo.
+   Generalmente, se suelen encontrar en el mismo reducer.js
 */
 
 // El nombre del reducer es el definido en el STORE!, en este caso amountReducer.
