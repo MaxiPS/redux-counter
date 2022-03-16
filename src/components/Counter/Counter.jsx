@@ -4,7 +4,7 @@ import React from "react";
 import { getAmount } from "../../store/amount/selector";
 
 // IMPORT FUNCION DE ACCION
-import { depositar } from "../../store/amount/action";
+import { depositar, retirar } from "../../store/amount/action";
 
 // IMPORT HOOKS DE REDUX
 
@@ -21,7 +21,7 @@ export const Counter = () => {
       <h1>CANTIDAD : {amount}</h1>
       {/* HAGO EL DISPATCH de la action al hacer click en el boton */}
       <button onClick={() => dispatch(depositar())}>DEPOSITAR $10</button>
-      <button>RETIRAR $10</button>
+      <button onClick={() => dispatch(retirar())}>RETIRAR $10</button>
     </div>
   );
 };
