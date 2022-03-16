@@ -1,5 +1,5 @@
 // IMPORTO LA CONSTANTE DEL TYPE (STRING)
-import { DEPOSITAR_DINERO } from "./action";
+import { DEPOSITAR_DINERO, RETIRAR_DINERO } from "./action";
 
 // Definimos un estado inicial del componente
 
@@ -30,7 +30,13 @@ export default (state = initialState, action) => {
         ...state,
         amount: state.amount + action.payload,
       };
-      
+
+    case RETIRAR_DINERO:
+      return {
+        ...state,
+        amount: state.amount - action.payload,
+      };
+
     default:
       return state;
   }
